@@ -1,12 +1,12 @@
 # 10. Program Organization
 프로그램이 한 개 이상의 function을  포함할 때, 발생하는 이슈에 대한 내용.
     
-> 1. [local variable ](#local-variable)
-> 2. [External(global) Variable ](#Externalglobal-Variable)
-> 3. [blocks](#Blocks)
-> 4. [scope](#Scope)
-> 5. [Organizing a C Program](#Organizing-a-C-Program)
-> 6. [QnA](#qna)
+1. [local variable ](#local-variable)
+2. [External(global) Variable ](#Externalglobal-Variable)
+3. [blocks](#Blocks)
+4. [scope](#Scope)
+5. [Organizing a C Program](#Organizing-a-C-Program)
+6. [QnA](#qna)
 
 ## Local variable
 함수 안에 정의된 변수
