@@ -3,11 +3,11 @@
 
 ### 목차
   1. [how the preprocessor works](#how-the-preprocessor-works)
-  2. [general rules of Directives]
-  3. [macro definition]
-  4. [conditional compilation]
-  5. [잘 안쓰는 지시어들 :#error, #line, #pragma]
-  1. QnA
+  2. [general rules of Directives](#general-rules-of-Directives)
+  3. [macro definition](#Macro-Definitions)
+  4. [conditional compilation](#Conditional-Compilation)
+  5. [잘 안쓰는 지시어들 :#error, #line, #pragma](#Miscellaneous-Directives)
+  6. [QnA](#QnA)
 
 
 ## how the preprocessor works
@@ -217,17 +217,19 @@ printf("value of i: %d", i)
 #pragma: 컴파일러가 특정한 동작을 하도록 요청함.
 
 ## QnA
----
+~~~
 q: 한 행에 #만 쓰여 있는 것도 가능?  
 a: 가능, null directive임. 지시어 영역을 한눈에 알아보기 편하게 해줌.
----
+~~~
+~~~
 q: 어떤 상수를 매크로로 사용 할지 모르겠다. 가이드라인 있음?
 a: 0, 1 빼고 모든 숫자 상수를 매크로로 써라  
    문자, 문자열은 문제의 여지가 있는데, 이것들은 매크로로 쓴다고 항상 가독성이 올라가지가 않음.
    내가 제안하는건 
    1. 상수가 한 번 이상 사용되면
    2. 상수가 수정될 수도 있을거 같으면 정도다. 
----
+~~~
+~~~
 q: #연산자로 stringize한다고 했는데, 인자가 `"` 나 `\` 이면 어떻게 되냐
 a: `"`는 `\"`로 `\`는 `\\`로 바뀐다.
----
+~~~
