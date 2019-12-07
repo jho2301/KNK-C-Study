@@ -1,4 +1,4 @@
-### The Preprocessor(전처리기)
+# The Preprocessor(전처리기)
 컴파일 하기 전에, #define이랑 #include 지시어들은 전처리기가 관리한다.
 
 ### 목차
