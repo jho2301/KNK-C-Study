@@ -7,6 +7,7 @@
   3. [macro definition]
   4. [conditional compilation]
   5. [잘 안쓰는 지시어들 :#error, #line, #pragma]
+  1. QnA
 
 
 ## how the preprocessor works
