@@ -1,3 +1,5 @@
+https://www.notion.so/sohyun/CH13_Strings-75b5f361d8444f2aa203901e60f07e08?v=03750e073b154bb084350420d821e6b8
+
 # CH13_Strings
 
 Created: Dec 02, 2019 9:37 AM
