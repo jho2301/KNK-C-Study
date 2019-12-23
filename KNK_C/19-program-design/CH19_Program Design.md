@@ -1,3 +1,6 @@
+### notion link
+https://www.notion.so/sohyun/CH19_Program-Design-be8e08d26dfe4a5395170fcebf38a4db
+
 # CH19_Program Design
 
 Created: Dec 18, 2019 10:56 AM
