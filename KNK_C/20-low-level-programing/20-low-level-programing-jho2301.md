@@ -11,6 +11,7 @@
 ## Bitwise Operator
 
     C는 int데이터를 bit레벨에서 다룰 수 있도록하는 6개의 비트연산자를 제공한다.
+
     - Shift 연산자 2개
     - Complement 연산자
     - and 연산자
@@ -46,8 +47,33 @@
 
     ~연산자는 단항연산자. 피연산자에 1의 보수를 취해준다.
     and, or연산자는 비트열의 모든 자리에 대해 boolean 연산을 실시한다.
-    우선순위 ~, &, ^ is highest / | is lowest
+    우선순위 : ~, &, ^ is highest / | is lowest
 
 ## Bit-Fields in Structure
+
+C는 Bit연산을 좀 더 쉽게 할 수 있게 대안을 제공한다.
+
+```c
+struct file_date {
+    unsigned int day: 5;
+    int month: 4, year: 7;
+
+    // 1. 해당 변수에는 콜론 뒤의 숫자값만큼의 비트공간만 할당함.
+    // 2. _Bool, int종류만 가능함.
+    // 3. &로 주소값을 불러올 수 없다.
+}
+```
+
+### How Bit-Fields Are Stored in structure
+
+비트열을 다루는 규칙은 "storage units"에 따른다.
+
+storage unit의 크기는 표준에 정의되어있지않다. 보통 8bit, 16bit, 32bit, 64bit다.
+
+비트열을 storage unit에 저장하며, structure의 멤버들은 구분되는 공간없이 저장된다. 어떤 컴파일러는 멤버의 시작지점도 생략한다.
+
+저장되는 순서 역시 머신, 컴파일러에 따라 상이함.
+
+unnamed 변수를 0 bit라 선언하면 원래 저장되어야할 storage units는 생략하고 다음 새로운 storage units에 저장한다. n bit 만큼 선언하면 해당 n bit만큼 빈 공간이 된다.
 
 ## Other Low-Level Techniques
