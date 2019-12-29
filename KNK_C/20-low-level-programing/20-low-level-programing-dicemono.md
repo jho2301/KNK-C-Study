@@ -179,6 +179,11 @@ struct s {
 
 #### Defining Machine-Dependent Types
 
+```C
+typedef unsigned char BYTE;
+typedef unsigned short WORD;
+```
+
 #### Using Unions to provide Multiple Views of Data
 
 ```C
